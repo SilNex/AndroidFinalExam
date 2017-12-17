@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/displayDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non Malicious code"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weekName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Mon"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/weekName"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="10dp"
+                android:text="중식"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lunchTable1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/Lunch"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/weekName"
+                android:text="LunchTable1"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lunchTable2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/lunchTable1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/weekName"
+                android:text="LunchTable2"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/Dinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lunchTable1"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                android:text="석식"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dinnerTable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lunchTable1"
+                android:layout_toRightOf="@+id/Dinner"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:text="dinnerTable"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#ffffff"
+                android:layout_below="@+id/lunchTable1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#ffffff"
+                android:layout_below="@+id/weekName"
+                />
+
+            <TextView
+                android:layout_width="3dp"
+                android:layout_height="550dp"
+                android:layout_below="@+id/weekName"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/Dinner"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="2dp"
+                android:layout_height="355dp"
+                android:layout_below="@+id/weekName"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/lunchTable1"
+                android:background="#ffffff" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
